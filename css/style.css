@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #C7BDE2; /* Slightly off-white for a softer appearance */
+    padding: 20px;
+}
+
+nav {
+    border: 2px solid #6750a4;
+    background-color: #f7f5f8;
+    border-radius: 20px;
+}
+
+
+@keyframes moveBg {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.cat {
+    background: url("../img/cat_cartoon.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: moveBg 40s linear infinite;
+    width: 100%; /* You need to set a width and height for the element. */
+    height: 150px; /* Adjust the height according to the size of your cartoon image. */
+}
+
+.travel_girl {
+    background: url("../img/travel-people-cartoon-happy-girl-with-hand-vector-9526705.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: moveBg 40s linear infinite;
+    width: 100%; /* You need to set a width and height for the element. */
+    height: 150px; /* Adjust the height according to the size of your cartoon image. */
+}
+
+.taco {
+    background: url("../img/food_cartoon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: moveBg 40s linear infinite;
+    width: 100%; /* You need to set a width and height for the element. */
+    height: 150px; /* Adjust the height according to the size of your cartoon image. */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cat {
+        animation: none;
+    }
+
+    .travel_girl {
+        animation: none;
+    }
+
+    .taco {
+        animation: none;
+    }
+    .gif-animation {
+        display: none;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+main div {
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: #3b06ca;
+}
+
+main img {
+    width: 80%;
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 4px;
+    border: 5px solid #a03297;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+video {
+    width: 80%;
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 4px;
+    border: 5px solid #a03297;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+li {
+    margin-left: 50px;
+    list-style-type: disc; /* This adds the bullet points back */
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav a {
+    background-color: #6750a4;
+    border-radius: 7%;
+    padding: 5px;
+    margin: 20px;
+    color: blanchedalmond;
+    text-decoration: none;
+    border: 2px solid transparent;
+    display: inline-block;
+    width: 100px;  /* Fixed width */
+    text-align: center;
+}
+
+nav a:focus,
+nav a:hover {
+    background-color: #C7BDE2;
+    border: 2px solid black;
+    outline: none;
+}
+
+.skip_to_main {
+    position: absolute;
+    top: -100px;
+    text-transform: uppercase;
+}
+
+.skip_to_main:focus {
+    left: 20px;
+    top: 50px;
+}
+
+nav a.active {
+    background-color: rgb(221, 27, 27);
+    color: #f7f5f8;
+    border: 7px solid #000000
+}
+
+.nav_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 16px; /* Adjust this value as needed */
+}
+
+@media (min-width: 768px) {
+    body {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+    h1, h2, h3 {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+    .skip_to_main {
+        background-color: #6750a4;
+        border-radius: 7%;
+        padding: 5px;
+        margin: 20px;
+        color: blanchedalmond;
+        text-decoration: none;
+        border: 2px solid transparent;
+        display: inline-block;
+        width: 150px;  /* Fixed width */
+        text-align: center;
+    }
+
+    .skip_to_main:focus, .skip_to_main:hover {
+        background-color: #C7BDE2;
+        border: 2px solid black;
+        outline: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 16px;
+    }
+
+    main div {
+        border: 4px dashed #e1e1e1;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .nav_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px
+    }
+
+}
+
+
