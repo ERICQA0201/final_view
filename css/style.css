@@ -225,6 +225,12 @@ p {
         grid-gap: 10px; /* This adds space between the grid items */
     }
 
+    .grid-container_travel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* This creates three columns */
+        grid-gap: 20px; /* This adds space between the grid items */
+    }
+
     main div {
         border: 4px dashed #e1e1e1;
         border-radius: 20px;
@@ -281,6 +287,12 @@ p {
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* This creates three columns */
         grid-gap: 10px; /* This adds space between the grid items */
+    }
+
+    .grid-container_travel {
+        display: grid;
+        grid-template-columns: 1fr; /* This creates three columns */
+        grid-gap: 20px; /* This adds space between the grid items */
     }
 
 }
