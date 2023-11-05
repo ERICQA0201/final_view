@@ -67,7 +67,7 @@ main {
     padding: 20px;
 }
 
-main div {
+.main_div_class {
     border-bottom: 2px solid #e1e1e1;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -236,7 +236,7 @@ p {
         grid-gap: 20px; /* This adds space between the grid items */
     }
 
-    main div {
+    .main_div_class {
         border: 4px dashed #e1e1e1;
         border-radius: 20px;
         padding: 20px;
@@ -276,7 +276,7 @@ p {
         padding: 16px;
     }
 
-    main div {
+    .main_div_class {
         border: 4px dashed #e1e1e1;
         border-radius: 20px;
         padding: 20px;
