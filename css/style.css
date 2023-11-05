@@ -187,7 +187,7 @@ p {
     }
 
     .skip_to_main {
-        background-color: #6750a4;
+        background-color: #37036c;
         border-radius: 7%;
         padding: 5px;
         margin: 20px;
@@ -200,7 +200,7 @@ p {
     }
 
     .skip_to_main:focus, .skip_to_main:hover {
-        background-color: #C7BDE2;
+        background-color: #37036c;
         border: 2px solid black;
         outline: none;
     }
@@ -246,7 +246,7 @@ p {
         font-family: Comic Sans MS, Comic Sans, cursive;
     }
     .skip_to_main {
-        background-color: #6750a4;
+        background-color: #37036c;
         border-radius: 7%;
         padding: 5px;
         margin: 20px;
