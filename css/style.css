@@ -177,7 +177,62 @@ p {
     margin-bottom: 16px; /* Adjust this value as needed */
 }
 
-@media (min-width: 768px) {
+@media (min-width:700px) {
+    body {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+
+    h1, h2, h3 {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+
+    .skip_to_main {
+        background-color: #6750a4;
+        border-radius: 7%;
+        padding: 5px;
+        margin: 20px;
+        color: blanchedalmond;
+        text-decoration: none;
+        border: 2px solid transparent;
+        display: inline-block;
+        width: 150px;  /* Fixed width */
+        text-align: center;
+    }
+
+    .skip_to_main:focus, .skip_to_main:hover {
+        background-color: #C7BDE2;
+        border: 2px solid black;
+        outline: none;
+    }
+
+    .nav_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 16px;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* This creates three columns */
+        grid-gap: 10px; /* This adds space between the grid items */
+    }
+
+    main div {
+        border: 4px dashed #e1e1e1;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
     body {
         font-family: Comic Sans MS, Comic Sans, cursive;
     }
@@ -220,6 +275,12 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* This creates three columns */
+        grid-gap: 10px; /* This adds space between the grid items */
     }
 
 }
