@@ -17,6 +17,21 @@ nav {
     background-image: url("../img/background_image_one.jpg");
 }
 
+#fetch-cat-fact-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px 20px; /* Some padding */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon when mouse over the button */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for mouse hover effect */
+}
+
+#fetch-cat-fact-button:hover {
+    background-color: #45a049; /* Darker shade of green for hover effect */
+}
+
 
 @keyframes moveBg {
     0%   { background-position: 0% 50%; }
@@ -72,7 +87,7 @@ main {
 }
 
 .main_div_class {
-    border-bottom: 2px solid #e1e1e1;
+    border-bottom: 2px dashed rgb(115, 58, 132);
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -199,6 +214,8 @@ p {
     margin-bottom: 16px; /* Adjust this value as needed */
 }
 
+
+
 @media (min-width:700px) {
     body {
         font-family: Inconsolata, serif;
@@ -259,9 +276,64 @@ p {
     }
 
     .main_div_class {
-        border: 4px dashed #e1e1e1;
+        border: 4px dashed rgb(115, 58, 132);
         border-radius: 20px;
         padding: 20px;
+    }
+
+    .main_pet {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .pet_element {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .grid-container_pet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .main_recipe{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .recipe_element {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid-container-recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    main img {
+        width: 80%;
+        height: 250px; /* Set a fixed height */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 4px;
+        border: 5px solid #a03297;
+        padding: 10px;
+        margin: 20px;
+        border-top-right-radius: 30px;
+    }
+    
+    main img:hover {
+        transform: scale(1.10); /* Slightly increase the size */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
     }
 }
 
@@ -303,8 +375,41 @@ p {
         padding: 16px;
     }
 
+    .main_pet {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .pet_element {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .main_recipe{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .recipe_element {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid-container-recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
     .main_div_class {
-        border: 4px dashed #e1e1e1;
+        border: 4px dashed rgb(115, 58, 132);
         border-radius: 20px;
         padding: 20px;
     }
@@ -317,14 +422,36 @@ p {
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* This creates three columns */
+        grid-template-columns: 1fr; /* This creates three columns */
         grid-gap: 10px; /* This adds space between the grid items */
+    }
+
+    .grid-container_pet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 
     .grid-container_travel {
         display: grid;
         grid-template-columns: 1fr; /* This creates three columns */
         grid-gap: 20px; /* This adds space between the grid items */
+    }
+
+    main img {
+        width: 80%;
+        height: 400px; /* Set a fixed height */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 4px;
+        border: 5px solid #a03297;
+        padding: 10px;
+        margin: 20px;
+        border-top-right-radius: 30px;
+    }
+    
+    main img:hover {
+        transform: scale(1.10); /* Slightly increase the size */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
     }
 
 }
